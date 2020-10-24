@@ -9,7 +9,7 @@ const
 app.use(express.static('./public'));
 
 app.get('/', (request, response) => {
-    response.status(200).send('Hello');
+    response.status(200).sendFile('index.html');
 });
 
 
